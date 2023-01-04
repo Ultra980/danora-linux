@@ -9,7 +9,7 @@ COPY danora-firstboot /usr/bin
 RUN sed -i 's/#AutomaticUpdatePolicy.*/AutomaticUpdatePolicy=stage/' /etc/rpm-ostreed.conf
 
 RUN rpm-ostree override remove firefox firefox-langpacks && \
-    rpm-ostree install distrobox fish xonsh wine
+    rpm-ostree install distrobox fish xonsh wine zenity neofetch
 
 RUN systemctl enable rpm-ostreed-automatic.timer && \
     systemctl enable flatpak-automatic.timer
