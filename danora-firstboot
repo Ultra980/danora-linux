@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if test -e "$HOME"/.config/ublue/firstboot-done; then
+if test -e "$HOME"/.config/danora/firstboot-done; then
     echo "Already ran"
     exit 0
 fi
@@ -55,32 +55,49 @@ if [ "$?" != 0 ] ; then
 fi
 echo "25"
 
-echo "# Installing Firefox"
-/usr/bin/flatpak install --user --noninteractive flathub org.mozilla.firefox
-if [ "$?" != 0 ] ; then
-        zenity --error \
-          --text="Installing Firefox Failed"
-        exit 1
-fi
+echo "# Installing Waterfox"
+mkdir -p "$HOME"/Applications/Waterfox && cd "$HOME"/Applications/Waterfox
+wget https://cdn1.waterfox.net/waterfox/releases/latest/linux
+unzip *.zip
+cp -r waterfox/* ./
+printf \
+"[Desktop Entry]\n
+Encoding=UTF-8\n
+Version=1.0\n
+Type=Application\n
+NoDisplay=false\n
+Exec="$HOME"/Applications/Waterfox/waterfox \%u\n
+Name=Waterfox\n
+Comment=Waterfox Browser" > "$HOME"/.local/share/applications/waterfox.desktop
 echo "30"
 
-echo "# Installing Thunderbird"
-/usr/bin/flatpak install --user --noninteractive flathub org.mozilla.Thunderbird
+echo "# Installing Lutris"
+/usr/bin/flatpak install --user --noninteractive flathub net.lutris.Lutris
 if [ "$?" != 0 ] ; then
         zenity --error \
-          --text="Installing Thunderbird Failed"
+          --text="Installing Lutris Failed"
         exit 1
 fi
 echo "40"
 
-echo "# Installing Extension Manager"
-/usr/bin/flatpak install --user --noninteractive flathub com.mattjakeman.ExtensionManager
+echo "# Installing Steam"
+/usr/bin/flatpak install --user --noninteractive flathub com.valvesoftware.Steam
 if [ "$?" != 0 ] ; then
         zenity --error \
-          --text="Installing Extension Manager Failed"
+          --text="Installing Steam Failed"
         exit 1
 fi
 echo "50"
+
+echo "# Installing ProtonUp-Qt"
+/usr/bin/flatpak install --user --noninteractive flathub net.davidotek.pupgui2
+if [ "$?" != 0 ] ; then
+        zenity --error \
+          --text="Installing ProtonUp-Qt Failed"
+        exit 1
+fi
+echo "55"
+
 
 echo "# Installing LibreOffice"
 /usr/bin/flatpak install --user --noninteractive flathub org.libreoffice.LibreOffice
@@ -89,7 +106,42 @@ if [ "$?" != 0 ] ; then
           --text="Installing LibreOffice Failed"
         exit 1
 fi
+echo "60"
+
+echo "# Installing OnlyOffice"
+/usr/bin/flatpak install --user --noninteractive flathub org.onlyoffice.desktopeditors
+if [ "$?" != 0 ] ; then
+        zenity --error \
+            --text "Installing OnlyOffice Failed"
+        exit 1
+fi
+echo "65"
+
+echo "# Installing Bottles"
+/usr/bin/flatpak install --user --noninteractive flathub com.usebottles.bottles
+if [ "$?" != 0 ] ; then
+        zenity --error \
+            --text "Installing Bottles Failed"
+        exit 1
+fi
 echo "70"
+
+echo "# Installing Weylus"
+cd ..
+mkdir -p Weylus
+cd Weylus
+wget https://github.com/H-M-H/Weylus/releases/latest/download/linux.zip
+unzip ./linux.zip
+printf \
+"[Desktop Entry]\n
+Encoding=UTF-8\n
+Version=1.0\n
+Type=Application\n
+NoDisplay=false\n
+Exec=$HOME/Applications/Weylus/weylus \%u\n
+Name=Weylus\n
+Comment=Control your PC with your tablet" > "$HOME"/.local/share/applications/weylus.desktop
+echo "75"
 
 echo "# Installing DejaDup Backup"
 /usr/bin/flatpak install --user --noninteractive flathub org.gnome.DejaDup
@@ -125,15 +177,16 @@ if [ "$?" != 0 ] ; then
           --text="Installing Celluloid Failed"
         exit 1
 fi
-echo "100"
+echo "95"
 
-echo "# Reticulating Final Splines"
-mkdir -p "$HOME"/.config/ublue/
-touch "$HOME"/.config/ublue/firstboot-done
+echo "# Almost done..."
+mkdir -p "$HOME"/.config/danora/
+touch "$HOME"/.config/danora/firstboot-done
+echo "100"
 
 ) | 
      
-   zenity --progress --title="uBlue Desktop Firstboot" --percentage=0 --auto-close --no-cancel --width=300
+   zenity --progress --title="Danora Firstboot - Initial configuration" --percentage=0 --auto-close --no-cancel --width=300
 
 if [ "$?" != 0 ] ; then
         zenity --error \
