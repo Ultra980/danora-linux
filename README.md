@@ -4,17 +4,24 @@
 
 A (still work-in-progress) gaming-focused setup for Fedora Kinoite, inspired by Nobara Linux.
 
-## Usage
-
+## Installation
+### Fedora Kionite
 Warning: This is an experimental feature and should not be used in production, try it in a VM for a while, you have been warned!
 
     sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/ultra980/danora:latest
-    
+
 We build date tags as well, so if you want to rebase to a particular day's release:
   
     sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/ultra980/danora:20221217 
 
 The `latest` tag will automatically point to the latest build. 
+
+### Docker/Podman
+If you wish to try Danora out in a container, use the `ghcr.io/Ultra980/danora` image:
+
+    docker run -it ghcr.io/Ultra980/danora
+
+To install on `podman`, simply replace "docker" with "podman"
 
 ## Features
 
