@@ -1,8 +1,8 @@
 # base
 
-[![build-ublue](https://github.com/ultra980/danora-linux/actions/workflows/build.yml/badge.svg)](https://github.com/ultra980/danora-linux/actions/workflows/build.yml)
+[![build-danora](https://github.com/ultra980/danora-linux/actions/workflows/build.yml/badge.svg)](https://github.com/ultra980/danora-linux/actions/workflows/build.yml)
 
-A base image with a (mostly) stock Fedora Silverblue. Help us make a sweet base image: Pull requests and improvements appreciated and encouraged!   
+A (still work-in-progress) gaming-focused setup for Fedora Kinoite, inspired by Nobara Linux.
 
 ## Usage
 
@@ -34,3 +34,4 @@ These images are signed with sisgstore's [cosign](https://docs.sigstore.dev/cosi
     cosign verify --key cosign.pub ghcr.io/ultra980/danora-linux
     
 If you're forking this repo you should [read the docs](https://docs.github.com/en/actions/security-guides/encrypted-secrets) on keeping secrets in github. You need to [generate a new keypair](https://docs.sigstore.dev/cosign/overview/) with cosign. The public key can be in your public repo (your users need it to check the signatures), and you can paste the private key in Settings -> Secrets -> Actions. 
+
