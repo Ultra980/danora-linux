@@ -35,3 +35,4 @@ These images are signed with sisgstore's [cosign](https://docs.sigstore.dev/cosi
     
 If you're forking this repo you should [read the docs](https://docs.github.com/en/actions/security-guides/encrypted-secrets) on keeping secrets in github. You need to [generate a new keypair](https://docs.sigstore.dev/cosign/overview/) with cosign. The public key can be in your public repo (your users need it to check the signatures), and you can paste the private key in Settings -> Secrets -> Actions. 
 
+<!--- TODO: Add credits (For now Jorge Castro, the Kinoite & Silverblue projects and GloriousEggroll(for Nobara) ) --->
