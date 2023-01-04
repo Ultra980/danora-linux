@@ -1,4 +1,4 @@
-# base
+# Danora Linux
 
 [![build-danora](https://github.com/ultra980/danora-linux/actions/workflows/build.yml/badge.svg)](https://github.com/ultra980/danora-linux/actions/workflows/build.yml)
 
