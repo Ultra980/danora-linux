@@ -1,0 +1,214 @@
+﻿Diagnose log at 2023-01-04T10:56:06Z
+
+AppPath: /usr/local/bin/git-credential-manager
+InstallDir: /usr/local/share/gcm-core/
+Version: 2.0.894+7ca5519f75
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Linux
+OSVersion: Linux dev.localhost.localdomain 6.1.1-1-default #1 SMP PREEMPT_DYNAMIC Thu Dec 22 15:37:40 UTC 2022 (e71748d) x86_64 x86_64 x86_64 GNU/Linux
+Reading environment variables... OK
+ Variables:
+SHELL=/bin/bash
+XCURSOR_THEME=breeze_cursors
+G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-15,CP1252
+SSH_AUTH_SOCK=/tmp/ssh-XXXXXX3erT9A/agent.1603
+MACHTYPE=x86_64-suse-linux
+CONTAINER_ID=dev
+KDE_SESSION_VERSION=5
+usr_etc_conf=/usr/etc/logrotate.conf
+XNLSPATH=/usr/X11R6/lib/X11/nls
+QT_AUTO_SCREEN_SCALE_FACTOR=0
+KONSOLE_VERSION=221200
+OSTYPE=linux
+XCURSOR_SIZE=24
+USER=ultra
+INVOCATION_ID=1284a9e5b382464e9169f4b7d2a7edba
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session1
+PWD=/home/ultra/git/danora-linux
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+OMF_CONFIG=/home/ultra/.config/omf
+PAGER=less
+MANAGERPID=1592
+LIBVA_DRIVER_NAME=iHD
+MAIL=/var/mail/ultra
+KONSOLE_DBUS_WINDOW=/Windows/1
+CSHEDIT=emacs
+SSH_ASKPASS=/usr/libexec/ssh/ssh-askpass
+HOST=dev.localhost.localdomain
+OMF_PATH=/home/ultra/.local/share/omf
+XDG_CURRENT_DESKTOP=KDE
+WINDOWMANAGER=/usr/bin/startplasma-x11
+WINDOWID=47185933
+JOURNAL_STREAM=8:23365
+GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/ultra/.gtkrc-2.0:/home/ultra/.config/gtkrc-2.0
+PROFILEHOME=
+XDG_RUNTIME_DIR=/run/user/1000
+DISTROBOX_ENTER_PATH=/usr/bin/distrobox-enter
+XDG_DATA_DIRS=/home/ultra/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+CPU=x86_64
+DESKTOP_SESSION=/usr/share/xsessions/plasma5
+SHLVL=2
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/ultra/.gtkrc:/home/ultra/.config/gtkrc
+etc_dir=/etc/logrotate.d
+G_BROKEN_FILENAMES=1
+MORE=-sl
+XDG_SEAT=seat0
+XDG_SESSION_DESKTOP=KDE
+QEMU_AUDIO_DRV=pa
+container=podman
+XAUTHORITY=/run/user/1000/xauth_DhksHy
+KONSOLE_DBUS_SESSION=/Sessions/1
+LS_OPTIONS=-N --color=tty -T 0
+AUDIODRIVER=pulseaudio
+XKEYSYMDB=/usr/X11R6/lib/X11/XKeysymDB
+XSESSION_IS_UP=yes
+COLORTERM=truecolor
+LESS_ADVANCED_PREPROCESSOR=no
+SESSION_MANAGER=local/ultrapc:@/tmp/.ICE-unix/1734,unix/ultrapc:/tmp/.ICE-unix/1734
+SYSTEMD_EXEC_PID=1720
+XAUTHLOCALHOSTNAME=ultrapc
+SSH_AGENT_PID=1660
+DISPLAY=:0
+LS_COLORS=no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.cmd=00;32:*.exe=01;32:*.com=01;32:*.bat=01;32:*.btm=01;32:*.dll=01;32:*.tar=00;31:*.tgz=00;31:*.arc=00;31:*.arj=00;31:*.taz=00;31:*.lha=00;31:*.lz4=00;31:*.lzh=00;31:*.lzma=00;31:*.tlz=00;31:*.txz=00;31:*.tzo=00;31:*.t7z=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.dz=00;31:*.gz=00;31:*.lrz=00;31:*.lz=00;31:*.lzo=00;31:*.xz=00;31:*.zst=00;31:*.tzst=00;31:*.bz2=00;31:*.bz=00;31:*.tbz=00;31:*.tbz2=00;31:*.tz=00;31:*.deb=00;31:*.rpm=00;31:*.jar=00;31:*.war=00;31:*.ear=00;31:*.sar=00;31:*.rar=00;31:*.alz=00;31:*.ace=00;31:*.zoo=00;31:*.cpio=00;31:*.7z=00;31:*.rz=00;31:*.cab=00;31:*.wim=00;31:*.swm=00;31:*.dwm=00;31:*.esd=00;31:*.asf=01;35:*.avi=01;35:*.bmp=01;35:*.cgm=01;35:*.dl=01;35:*.emf=01;35:*.flc=01;35:*.fli=01;35:*.flv=01;35:*.gif=01;35:*.gl=01;35:*.jpeg=01;35:*.jpg=01;35:*.m2v=01;35:*.m4v=01;35:*.mjpeg=01;35:*.mjpg=01;35:*.mkv=01;35:*.mng=01;35:*.mov=01;35:*.mp4=01;35:*.mp4v=01;35:*.mpeg=01;35:*.mpg=01;35:*.nuv=01;35:*.ogm=01;35:*.pbm=01;35:*.pcx=01;35:*.pgm=01;35:*.png=01;35:*.ppm=01;35:*.qt=01;35:*.rm=01;35:*.rmvb=01;35:*.svg=01;35:*.svgz=01;35:*.tga=01;35:*.tif=01;35:*.tiff=01;35:*.vob=01;35:*.webm=01;35:*.webp=01;35:*.wmv=01;35:*.xbm=01;35:*.xcf=01;35:*.xpm=01;35:*.xwd=01;35:*.yuv=01;35:*.ogv=01;35:*.ogx=01;35:*.aiff=00;32:*.ape=00;32:*.aac=00;32:*.au=00;32:*.flac=00;32:*.m4a=00;32:*.mid=00;32:*.midi=00;32:*.mka=00;32:*.mp3=00;32:*.mpc=00;32:*.ogg=00;32:*.ra=00;32:*.voc=00;32:*.wav=00;32:*.wma=00;32:*.wv=00;32:*.oga=00;32:*.opus=00;32:*.spx=00;32:*.xspf=00;32:
+etc_conf=
+HISTSIZE=1000
+LOGNAME=ultra
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/home/ultra/.local/bin:/home/ultra/bin:/usr/bin:/home/ultra/.cargo/bin
+KDE_FULL_SESSION=true
+XDG_CONFIG_DIRS=/home/ultra/.config/kdedefaults:/etc/xdg:/usr/local/etc/xdg:/usr/etc/xdg
+GPG_TTY=/dev/pts/1
+VENDOR=suse
+LESSCLOSE=lessclose.sh %s %s
+COLORFGBG=15;0
+TERM=xterm-256color
+XDG_SESSION_CLASS=user
+PROFILEREAD=true
+XDG_SESSION_ID=3
+LC_CTYPE=en_US.UTF-8
+XDG_SESSION_TYPE=x11
+KDE_SESSION_UID=1000
+HOSTTYPE=x86_64
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+LESSOPEN=lessopen.sh %s
+EDITOR=nvim
+LESSKEY=/usr/etc/lesskey.bin
+KDE_APPLICATIONS_AS_SCOPE=1
+KONSOLE_DBUS_SERVICE=:1.366
+LESS=-M -I -R
+XDG_VTNR=7
+HOME=/home/ultra
+HOSTNAME=dev.localhost.localdomain
+usr_etc_dir=/usr/etc/logrotate.d
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is '/tmp/'...
+Checking basic file I/O...
+Writing to temporary file '/tmp/7ff6416288be28b8354884a2'... OK
+Reading from temporary file '/tmp/7ff6416288be28b8354884a2'... OK
+Deleting temporary file '/tmp/7ff6416288be28b8354884a2'... OK
+Testing IFileSystem instance...
+UserHomePath: /home/ultra
+UserDataDirectoryPath: /home/ultra/.gcm
+GetCurrentDirectory(): /home/ultra/git/danora-linux
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:45995/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.39.0'
+Locating current repository... OK
+Git repository at '/home/ultra/git/danora-linux/.git'
+Listing all Git configuration... OK
+Git configuration:
+file:/home/ultra/.gitconfig	user.email=stan.alexandru@ichb.ro
+file:/home/ultra/.gitconfig	user.name=Alex Stan
+file:/home/ultra/.gitconfig	credential.helper=
+file:/home/ultra/.gitconfig	credential.helper=/usr/local/bin/git-credential-manager-core
+file:/home/ultra/.gitconfig	credential.credentialstore=gpg
+file:/home/ultra/.gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=true
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	remote.origin.url=https://github.com/Ultra980/danora-linux
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: False
+Exception:
+System.Exception: Password store has not been initialized at '/home/ultra/.password-store'; run `pass init <gpg-id>` to initialize the store.
+See https://aka.ms/gcm/credstores for more information.
+   at GitCredentialManager.CredentialStore.ValidateGpgPass(String& storeRoot, String& execPath)
+   at GitCredentialManager.CredentialStore.EnsureBackingStore()
+   at GitCredentialManager.CredentialStore.Remove(String service, String account)
+   at GitCredentialManager.Diagnostics.CredentialStoreDiagnostic.RunInternalAsync(StringBuilder log, IList`1 additionalFiles)
+   at GitCredentialManager.Diagnostics.Diagnostic.RunAsync()
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential...Deleting test credential...
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker not supported.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: /home/ultra/.local/.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: /home/ultra/.local/.IdentityService/msal.cache
+KeyringCollection: 
+KeyringSchemaName: 
+KeyringSecretLabel: 
+KeyringAttribute1: (,)
+KeyringAttribute2: (,)
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
