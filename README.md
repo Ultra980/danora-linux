@@ -5,8 +5,11 @@
 A (still work-in-progress) gaming-focused setup for Fedora Kinoite, inspired by Nobara Linux.
 
 ## Installation
-### Fedora Kionite
-Warning: This is an experimental feature and should not be used in production, try it in a VM for a while, you have been warned!
+### Fedora Kinoite/Silverblue
+If you want to install Danora on top of an existing Fedora Kinoite/Silverblue installation, follow the steps below.
+> Note: Danora WILL install the KDE Plasma Desktop Enviorment, even if installed on top of Silverblue
+
+Warning: This is experimental on our upstream distro, `ublue`, so try it first in a VM. You have been warned!
 
     sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/ultra980/danora:latest
 
@@ -16,12 +19,12 @@ We build date tags as well, so if you want to rebase to a particular day's relea
 
 The `latest` tag will automatically point to the latest build. 
 
-### Docker/Podman
-If you wish to try Danora out in a container, use the `ghcr.io/Ultra980/danora` image:
+### Podman/Docker
+If you wish to try Danora out in a container, you can use the `ghcr.io/Ultra980/danora` prebuilt image:
 
-    docker run -it ghcr.io/Ultra980/danora bash
+    podman run -it ghcr.io/Ultra980/danora bash
 
-To install on `podman`, simply replace "docker" with "podman"
+To install on `docker`, simply replace "docker" with "podman"
 
 ## Features
 
