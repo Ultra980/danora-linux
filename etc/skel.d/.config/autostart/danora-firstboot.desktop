@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Danora Linux initial setup
+Comment=Sets up Danora Linux correctly on first boot
+Exec=/usr/bin/danora-firstboot
+Icon=org.gnome.Terminal
+Type=Application
+Categories=Utility;System;
+Name[en_US]=startup
