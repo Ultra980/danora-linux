@@ -5,6 +5,7 @@ FROM ghcr.io/cgwalters/fedora-kinoite:${FEDORA_MAJOR_VERSION}
 
 COPY etc /etc
 COPY danora-firstboot /usr/bin
+COPY install_waterfox /usr/bin
 
 RUN sed -i 's/#AutomaticUpdatePolicy.*/AutomaticUpdatePolicy=stage/' /etc/rpm-ostreed.conf
 
