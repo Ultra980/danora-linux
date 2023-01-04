@@ -40,5 +40,5 @@ If you're forking this repo you should [read the docs](https://docs.github.com/e
 ## Credits
 **Credits may not always be up to date**
 - Jorge Castro and `ublue` for the base repo
-- Fedora Silverblue and Kionite for the base immutable os
+- Fedora Silverblue and Kionite for the base immutable OS
 - GloriousEggroll and the Nobara team for inspiring Danora
