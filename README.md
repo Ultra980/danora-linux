@@ -19,7 +19,7 @@ The `latest` tag will automatically point to the latest build.
 ### Docker/Podman
 If you wish to try Danora out in a container, use the `ghcr.io/Ultra980/danora` image:
 
-    docker run -it ghcr.io/Ultra980/danora
+    docker run -it ghcr.io/Ultra980/danora bash
 
 To install on `podman`, simply replace "docker" with "podman"
 
