@@ -2,6 +2,8 @@
 
 [![build-danora](https://github.com/ultra980/danora-linux/actions/workflows/build.yml/badge.svg)](https://github.com/ultra980/danora-linux/actions/workflows/build.yml)
 
+[![build-rawhide](https://github.com/ultra980/danora-linux/actions/workflows/build_rawhide.yml/badge.svg)](https://github.com/ultra980/danora-linux/actions/workflows/build_rawhide.yml)
+
 A (still work-in-progress) gaming-focused setup for Fedora Kinoite, inspired by Nobara Linux.
 
 ## Installation
