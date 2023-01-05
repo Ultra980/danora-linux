@@ -58,3 +58,11 @@ If you're forking this repo you should [read the docs](https://docs.github.com/e
 - Jorge Castro and `ublue` for the base repo
 - Fedora Silverblue and Kionite for the base immutable OS
 - GloriousEggroll and the Nobara team for inspiring Danora
+
+## Naming
+The name danora is made out of three parts:
+1. *da*, which means "yes" in Romanian (this is a joke based on the name "*No*bara", we sometimes called this "Yesbara")
+2. *no*, from "Nobara"
+3. *ra*, a common feature between "Fedora" and "Nobara" (and now also "Danora").
+
+All three names are made out of 6 letters, the last 2 being "ra" (that's why we have number 3).
