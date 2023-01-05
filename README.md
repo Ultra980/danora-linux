@@ -11,7 +11,7 @@ A (still work-in-progress) gaming-focused setup for Fedora Kinoite, inspired by 
 If you want to install Danora on top of an existing Fedora Kinoite/Silverblue installation, follow the steps below.
 > Note: Danora WILL install the KDE Plasma Desktop Enviorment, even if installed on top of Silverblue
 
-Warning: This is experimental on our upstream distro, `ublue`, so try it first in a VM. You have been warned!
+Warning: This is experimental on our upstream distro, `Kinoite`, so try it first in a VM. You have been warned!
 
     sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/ultra980/danora:latest
 
@@ -20,6 +20,9 @@ We build date tags as well, so if you want to rebase to a particular day's relea
     sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/ultra980/danora:20221217 
 
 The `latest` tag will automatically point to the latest build. 
+
+We also build rawhide (rolling) images, but these might be *very unstable*, try them at your own risk.
+    sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/ultra980/danora:rawhide
 
 ### Podman/Docker
 If you wish to try Danora out in a container, you can use the `ghcr.io/Ultra980/danora` prebuilt image:
