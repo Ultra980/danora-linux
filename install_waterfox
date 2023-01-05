@@ -1,0 +1,14 @@
+mkdir -p "$HOME"/Applications/Waterfox && cd "$HOME"/Applications/Waterfox
+wget https://cdn1.waterfox.net/waterfox/releases/latest/linux
+unzip *.zip
+cp -r waterfox/* ./
+printf \
+"[Desktop Entry]\n
+Encoding=UTF-8\n
+Version=1.0\n
+Type=Application\n
+NoDisplay=false\n
+Exec="$HOME"/Applications/Waterfox/waterfox \%u\n
+Name=Waterfox\n
+Comment=Waterfox Browser" > "$HOME"/.local/share/applications/waterfox.desktop
+echo "30"
