@@ -37,7 +37,8 @@ To install on `docker`, simply replace "docker" with "podman"
 - Start with a base Fedora Kinoite 37 image
 - Removes Firefox from the base image
 - Adds the following packages to the base image:
-  - distrobox, fish, xonsh, wine 
+  - distrobox, fish, xonsh, wine, dash
+- Sets dash as the default shell, speeding up the system
 - Sets automatic staging of updates for the system
 - Sets flatpaks to update twice a day
 

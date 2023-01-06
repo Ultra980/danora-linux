@@ -10,7 +10,9 @@ COPY install_waterfox /usr/bin
 RUN sed -i 's/#AutomaticUpdatePolicy.*/AutomaticUpdatePolicy=stage/' /etc/rpm-ostreed.conf
 
 RUN rpm-ostree override remove firefox firefox-langpacks && \
-    rpm-ostree install distrobox fish xonsh wine zenity neofetch
+    rpm-ostree install distrobox fish xonsh wine zenity neofetch dash
+
+RUN ln -s /usr/bin/dash /bin/sh
 
 RUN systemctl enable rpm-ostreed-automatic.timer && \
     systemctl enable flatpak-automatic.timer
