@@ -40,7 +40,6 @@ To install on `docker`, simply replace "docker" with "podman"
   - distrobox, fish, xonsh, wine 
 - Sets automatic staging of updates for the system
 - Sets flatpaks to update twice a day
-- Everything else (desktop, artwork, etc) remains stock so you can use this as a good starting image
 
   
 ## Verification
