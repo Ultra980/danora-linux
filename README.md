@@ -31,7 +31,13 @@ If you wish to try Danora out in a container, you can use the `ghcr.io/Ultra980/
 
     podman run -it ghcr.io/Ultra980/danora bash
 
-To install on `docker`, simply replace "docker" with "podman"
+To install on `docker`, simply replace `podman` with `docker` (or `sudo docker` if docker isn't set up unprivileged).
+
+#### Pseudo-VM
+If you want to try it with systemd in podman, like a pseudo-VM, run this command (note that it needs root):
+
+    sudo podman run --privileged -v /etc/passwd:/etc/passwd -v /etc/shadow:/etc/shadow -v /etc/group:/etc/group -it ghcr.io/ultra980/danora:latest /usr/lib/systemd/systemd rhgb --system --runlevel 3 --network host
+> Note: We haven't tested this with docker
 
 ## Features
 
