@@ -12,7 +12,7 @@ RUN sed -i 's/#AutomaticUpdatePolicy.*/AutomaticUpdatePolicy=stage/' /etc/rpm-os
 RUN rpm-ostree override remove firefox firefox-langpacks && \
     rpm-ostree install distrobox fish xonsh wine zenity neofetch dash
 
-RUN ln -s /usr/bin/dash /bin/sh
+RUN rm -f /bin/sh && ln -s /usr/bin/dash /bin/sh
 
 RUN systemctl enable rpm-ostreed-automatic.timer && \
     systemctl enable flatpak-automatic.timer
