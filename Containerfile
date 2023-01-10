@@ -11,6 +11,10 @@ COPY install_waterfox /usr/bin
 
 RUN sed -i 's/#AutomaticUpdatePolicy.*/AutomaticUpdatePolicy=stage/' /etc/rpm-ostreed.conf
 
+# Edit /etc/os-release
+RUN sed -it 's/NAME=.*/NAME="Danora Linux"/' /etc/os-release
+
+
 RUN rpm-ostree override remove firefox firefox-langpacks && \
     rpm-ostree install distrobox fish xonsh wine zenity neofetch dash
 
