@@ -70,6 +70,7 @@ jobs:
           build-args: |
             FEDORA_MAJOR_VERSION=${{ matrix.major_version }}
             FEDORA_DISTRO=fcos
+            IMAGE_REPO=quay.io/cgwalters
           oci: true
 
       # Workaround bug where capital letters in your GitHub username make it impossible to push to GHCR.
