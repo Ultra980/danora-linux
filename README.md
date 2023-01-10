@@ -22,7 +22,7 @@ We build date tags as well, so if you want to rebase to a particular day's relea
 The `latest` tag will automatically point to the latest build. 
 
 We also build rawhide (rolling) images, but these might be *very unstable*, try them at your own risk.
-> Note: Rawhide seems to fail to build ~~half of the time~~ automatically, so if the rawhide badge on the top is red and says "failed", the Rawhide build is not up-to-date with the latest Danora and/or upstream (Kinoite) modifications. This may include, among others, outdated packages or unfixed bugs. See also https://github.com/Ultra980/danora-linux/issues/1
+> Note: ~~Rawhide seems to fail to build half of the time automatically, so if the rawhide badge on the top is red and says "failed", the Rawhide build is not up-to-date with the latest Danora and/or upstream (Kinoite) modifications. This may include, among others, outdated packages or unfixed bugs. See also https://github.com/Ultra980/danora-linux/issues/1~~ it now builds fine everytime.
 
     sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/ultra980/danora:rawhide
 
