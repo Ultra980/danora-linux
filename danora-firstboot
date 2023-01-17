@@ -28,14 +28,14 @@ if [ "$?" != 0 ] ; then
 fi
 echo "5"
 
-echo "# Replacing Fedora Flatpaks with Flathub Ones (this may take a while)"
-/usr/bin/flatpak install --user --noninteractive org.gnome.Platform//43
-#/usr/bin/flatpak install --user --noninteractive --reinstall flathub $(flatpak list --app-runtime=org.fedoraproject.Platform --columns=application | tail -n +1 ) # This fails
-if [ "$?" != 0 ] ; then
-        zenity --error \
-          --text="Replacing Fedora Flatpaks Failed"
-        exit 1
-fi
+# echo "# Replacing Fedora Flatpaks with Flathub Ones (this may take a while)"
+# /usr/bin/flatpak install --user --noninteractive org.gnome.Platform//43
+# #/usr/bin/flatpak install --user --noninteractive --reinstall flathub $(flatpak list --app-runtime=org.fedoraproject.Platform --columns=application | tail -n +1 ) # This fails
+# if [ "$?" != 0 ] ; then
+#        zenity --error \
+#          --text="Replacing Fedora Flatpaks Failed"
+#        exit 1
+#fi
 echo "20"
 
 echo "Removing all preinstalled Flatpaks"
