@@ -1,6 +1,6 @@
 ARG FEDORA_MAJOR_VERSION=37
 ARG FEDORA_DISTRO=fedora-kinoite
-ARG IMAGE_REPO=ghcr.io/cgwalters
+ARG IMAGE_REPO=quay.io/fedora-ostree-desktops
 
 FROM ${IMAGE_REPO}/${FEDORA_DISTRO}:${FEDORA_MAJOR_VERSION}
 # See https://pagure.io/releng/issue/11047 for final location
