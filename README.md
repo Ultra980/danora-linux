@@ -8,6 +8,8 @@
 
 A (still work-in-progress) gaming-focused setup for Fedora Kinoite, inspired by Nobara Linux.
 
+# We're sad to announce that work on the Danora Linux project has stopped, so we will archive this repo. We simply don't have the time and have moved to other ideas. Please, DO NOT use this, since after it's archived it will no longer be built, so it will be severely outdated. If you really want to use it (or improve it), you're free to fork this repository and use your  own ghcr repo, but change every occurence of "ultra980" in README.md to your own username.
+
 ## Installation
 ### Fedora Kinoite/Silverblue
 If you want to install Danora on top of an existing Fedora Kinoite/Silverblue installation, follow the steps below.
